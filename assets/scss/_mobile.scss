@@ -1,0 +1,10 @@
+@import 'tokkens';
+@import 'mixins';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px;
+}

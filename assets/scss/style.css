@@ -1,0 +1,112 @@
+@media only screen and (min-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px; } }
+@media only screen and (min-width: 1440px) {
+  header {
+    width: 50%; }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px; }
+
+  .card-cyan {
+    grid-column: 1/2;
+    grid-row: 1/3; }
+
+  .card-red {
+    grid-column: 2/3; }
+
+  .card-blue {
+    grid-column: 2/3; }
+
+  .card-orange {
+    grid-column: 3/4;
+    grid-row: 1/3; } }
+body {
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+  background-color: #fafafa;
+  color: #4c4e61; }
+
+header {
+  width: 100%;
+  margin: auto;
+  text-align: center; }
+
+.card-cyan {
+  position: relative;
+  width: 90%;
+  border-top: 2px solid #45d3d3;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #a3a5ae;
+  margin: 10px;
+  padding: 10px; }
+  .card-cyan .icon {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-image: url("images/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain; }
+
+.card-red {
+  position: relative;
+  width: 90%;
+  border-top: 2px solid #ea5353;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #a3a5ae;
+  margin: 10px;
+  padding: 10px; }
+  .card-red .icon {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-image: url("images/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain; }
+
+.card-blue {
+  position: relative;
+  width: 90%;
+  border-top: 2px solid #549ef2;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #a3a5ae;
+  margin: 10px;
+  padding: 10px; }
+  .card-blue .icon {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-image: url("images/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain; }
+
+.card-orange {
+  position: relative;
+  width: 90%;
+  border-top: 2px solid #fcaf4a;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #a3a5ae;
+  margin: 10px;
+  padding: 10px; }
+  .card-orange .icon {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-image: url("images/icon-supervisor.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain; }
+
+/*# sourceMappingURL=style.css.map */
