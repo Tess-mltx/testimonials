@@ -9,10 +9,41 @@
 
 
 body{
-    font-size: $font-size-body;
+    font-size: $font-size-body-small;
     width: 80%;
     margin: auto;
+    padding: 10% 0 10% 0;
     background-color: $neutral-light-gray-blue;
+}
+.testimonial-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .testimonial-author-picture {
+        border-radius: 50%;
+        border: 1px solid $primary-white;
+        height: fit-content;
+    }
+}
+.testimonial-author {
+    margin: 10px;
+    & .testimonial-author-name, p {
+        margin: 2px;
+        font-size: $font-size-body-small;
+    }
+    & p {
+        opacity: 50%;
+    }
+}
+
+.strong-quote{
+    font-size: $font-size-body-medium;
+    display: block;
+    margin: 12px 0px 12px 0px;
+    font-weight: $font-weight-bold;
+}
+.testimonial-quote {
+    opacity: 70%;
 }
 
 
