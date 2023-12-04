@@ -12,37 +12,23 @@ body{
     font-size: $font-size-body;
     width: 80%;
     margin: auto;
-    background-color: $neutral-light-gray;
-    color: $neutral-dark-blue;
-}
-header {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    background-color: $neutral-light-gray-blue;
 }
 
-.card-cyan{
-    @include style-card($primary-cyan);
-    & .icon{
-        @include icon-card-style('images/icon-supervisor.svg');
-    };
+
+.card-top-left{
+    @include style-card($accent-color);
 }
-.card-red{
-    @include style-card($primary-red);
-    & .icon{
-        @include icon-card-style('images/icon-supervisor.svg');
-    };
+.card-top-right{
+    @include style-card($pimary-gray-blue );
 }
-.card-blue{
-    @include style-card($primary-blue);
-    & .icon{
-        @include icon-card-style('images/icon-supervisor.svg');
-    };
+.card-bottom-left{
+    @include style-card($primary-white);
 }
-.card-orange{
-    @include style-card($primary-orange);
-    & .icon{
-        @include icon-card-style('images/icon-supervisor.svg');
-    };
+.card-bottom-right{
+    @include style-card($primary-dark-blue);
+}
+.card-asside{
+    @include style-card($primary-white);
 }
 
