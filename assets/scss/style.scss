@@ -1,0 +1,65 @@
+@import 'tokkens';
+@import 'mixins';
+@media only screen and (min-width: 375px){ 
+    @import 'mobile';
+}
+@media only screen and (min-width: 1440px){ 
+    @import 'desktop';
+}
+
+
+body{
+    font-size: $font-size-body-small;
+    width: 80%;
+    margin: auto;
+    padding: 10% 0 10% 0;
+    background-color: $neutral-light-gray-blue;
+}
+.testimonial-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .testimonial-author-picture {
+        border-radius: 50%;
+        border: 1px solid $primary-white;
+        height: fit-content;
+    }
+}
+.testimonial-author {
+    margin: 10px;
+    & .testimonial-author-name, p {
+        margin: 2px;
+        font-size: $font-size-body-small;
+    }
+    & p {
+        opacity: 50%;
+    }
+}
+
+.strong-quote{
+    font-size: $font-size-body-medium;
+    display: block;
+    margin: 12px 0px 12px 0px;
+    font-weight: $font-weight-bold;
+}
+.testimonial-quote {
+    opacity: 70%;
+}
+
+
+.card-top-left{
+    @include style-card($accent-color);
+}
+.card-top-right{
+    @include style-card($pimary-gray-blue );
+}
+.card-bottom-left{
+    @include style-card($primary-white);
+}
+.card-bottom-right{
+    @include style-card($primary-dark-blue);
+}
+.card-asside{
+    @include style-card($primary-white);
+}
+

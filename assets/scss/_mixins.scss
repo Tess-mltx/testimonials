@@ -1,0 +1,24 @@
+@import 'tokkens';
+
+@mixin font-style-global($weight){
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-weight: $font-weight-$weight;
+}
+@mixin style-card($background-color) {
+    position: relative;
+    background-color: $background-color;
+    border-radius: 5px;
+    padding: 20px;
+    @if $background-color == $accent-color or $background-color == $pimary-gray-blue or $background-color == $primary-dark-blue {
+        color: $primary-white;
+    } 
+    @else{
+        color: $primary-dark-blue;
+    }
+}
+// mixin testimonial-grid-display ($grid-column , $grid-row){
+//     grid-column: $grid-column;
+//     grid-row: $grid-row;
+// }
+
